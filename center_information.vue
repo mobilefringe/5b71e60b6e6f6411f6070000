@@ -70,6 +70,7 @@
             created() {
                 this.loadData().then(response => {
                     var repo = this.findRepoByName('Center Information Banner').images;
+                    console.log(repo)
                     if(repo != null) {
                         this.pageBanner = repo[0];
                     } else {
