@@ -398,6 +398,9 @@ a {
         }
         .footer_links a {
             color: #FFF;
+            &:hover {
+                text-decoration: underline;
+            }
         }
     }
     .copyright {
