@@ -383,7 +383,7 @@ a {
                 background: #555;
             }
             &:hover {
-                color: $secondary;
+                color: #FFF;
             }
         }
     }
