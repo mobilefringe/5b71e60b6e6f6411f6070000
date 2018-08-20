@@ -396,9 +396,9 @@ a {
         .social_icon {
             padding: 0 5px;
         }
-        .footer_links a {
-            color: $secondary;
-        }
+        // .footer_links a {
+        //     color: $secondary;
+        // }
     }
     .copyright {
         padding: 20px 0;
