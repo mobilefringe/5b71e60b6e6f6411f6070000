@@ -39,11 +39,11 @@ require.config({
         'masonry' : 'https://cdnjs.cloudflare.com/ajax/libs/masonry/4.0.0/masonry.pkgd.min',
         'vue-masonry-plugin' : 'https://cdn.jsdelivr.net/npm/vue-masonry@0.10.16/dist/vue-masonry-plugin',
         // 'vue-masonry-plugin' : "https://codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/application/javascript/1529435130000/masonrymod",
-        //mappplic-png--map dependencies
+        //mappplic-map dependencies
         'mousewheel' : 'https://cdnjs.cloudflare.com/ajax/libs/jquery-mousewheel/3.1.13/jquery.mousewheel.min',
-        'mapplic' : 'https://mmvue.codecloudapp.com/mapplic',
+        'mapplic' : 'https://preview-mmvue.codecloudapp.com/mapplic',
         'hammer' : 'https://codecloud.cdn.speedyrails.net/sites/59bac7db6e6f644f22ba0000/text/javascript/1484859750000/hammer.min',
-        'mapplic-png-map' : 'https://mmvue.codecloudapp.com/mapplic_png.vue?noext',
+        'mapplic-map' : 'https://preview-mmvue.codecloudapp.com/mapplic.vue?noext',
         'loader': 'https://mmvue.codecloudapp.com/loader.vue?noext',
         //google map dependcies
         'google-map-api': 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCukCjH3fsuDYBdI44hZKL43m60jEToJjY',
