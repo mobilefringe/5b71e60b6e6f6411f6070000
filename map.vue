@@ -49,8 +49,6 @@
                             </div>
                         </div>
                         <div class="col-md-9">
-                            <!--<mapplic-png-map ref="pngmap_ref" :height="664" :hovertip="true" :storelist="allStores" :floorlist="floorList" :bindLocationOpened="true" :svgWidth="property.map_image_width" :svgHeight="property.map_image_height" :showPin="true" tooltiplabel="View Store Details"></mapplic-png-map>-->
-                            
                             <mapplic-map ref="mapplic_ref" :height="664" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="allStores" :floorlist="floorList" tooltiplabel="View Store Details"></mapplic-map>
                         </div>
                     </div>
@@ -163,16 +161,6 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                // dropPin(store) {
-                //     this.pngMapRef.showLocation(store.id);
-                // },
-                // onOptionSelect(option) {
-                //     this.$nextTick(function() {
-                //         this.storeSearch = ""
-                //     });
-                //     this.pngMapRef.showLocation(option.id);
-                // }
-                
                 onOptionSelect(option) {
                     this.$nextTick(function() {
                         this.storeSearch = ""
