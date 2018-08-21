@@ -163,14 +163,24 @@
                         console.log("Error loading data: " + e.message);
                     }
                 },
-                dropPin(store) {
-                    this.pngMapRef.showLocation(store.id);
-                },
+                // dropPin(store) {
+                //     this.pngMapRef.showLocation(store.id);
+                // },
+                // onOptionSelect(option) {
+                //     this.$nextTick(function() {
+                //         this.storeSearch = ""
+                //     });
+                //     this.pngMapRef.showLocation(option.id);
+                // }
+                
                 onOptionSelect(option) {
                     this.$nextTick(function() {
                         this.storeSearch = ""
                     });
-                    this.pngMapRef.showLocation(option.id);
+                    this.svgMapRef.addMarker(option);
+                },
+                dropPin(store) {
+                    this.$refs.mapplic_ref.showLocation(store.svgmap_region);
                 }
             }
         });
