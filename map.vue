@@ -135,23 +135,22 @@
                         el.classList.remove("open");
                     }
                 },
-                getPNGurl() {
-                    return "https://www.mallmaverick.com" + this.property.map_url;
-                },
-                pngMapRef() {
-                    return this.$refs.pngmap_ref;
+                getSVGMap () {
+                    var mapURL = "https://www.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
+                    return mapURL
                 },
                 floorList () {
                     var floor_list = [];
                     
                     var floor_1 = {};
                     floor_1.id = "first-floor";
-                    floor_1.title = "Floor 1";
-                    floor_1.map = this.getPNGurl;
+                    floor_1.title = "Level One";
+                    floor_1.map = this.getSVGMap
+                    // floor_1.minimap = this.miniOne;
                     floor_1.z_index = 1;
                     floor_1.show = true;
-                    
                     floor_list.push(floor_1);
+
                     return floor_list;
                 }
             },
