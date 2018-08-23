@@ -452,8 +452,7 @@ a {
         position: absolute;
         top: 0;
         right: 0;
-        // background-color: rgba(50, 156, 156, .7);
-        background-color: rgba(44, 129, 129, .8);
+        background-color: rgba(0, 115, 141, .8);
         .banner_content {
             min-width: 500px;
             position: absolute;
@@ -497,7 +496,6 @@ a {
             .banner_btn {
                 padding: 11px 30px;
                 display: inline-block;
-                // border: 1px solid $secondary;
                 background: $secondary;
                 font-size: 0.9rem;
                 font-weight: 700;
@@ -1533,7 +1531,7 @@ $anim-speed: 0.3s;
         width: 100%;
         height: 100%;
         display: none;
-        background-color: rgba(50, 155, 155, .8);
+        background-color: rgba(0, 115, 141, .8);
         transition: all 0.3s ease;
     }
 }
