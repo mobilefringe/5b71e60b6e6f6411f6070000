@@ -86,6 +86,7 @@
                         }
                     }
                     
+                    this.getSVGMap;
                     this.dataLoaded = true;
                 });
             },
