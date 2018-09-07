@@ -156,7 +156,7 @@
                     }
                 
                     this.updateCurrentStore(this.id);
-                    this.getSVGMap
+                    this.getSVGMap;
                     this.dataLoaded = true;
                 });
             },
@@ -293,12 +293,13 @@
                     }
                     this.$breadcrumbs[1].meta.breadcrumb = this.currentStore.name
                 },
-                updatePNGMap(map) {
+                updateSVGMap(map) {
                     this.map = map;
-                    this.dropPin(this.currentStore);
+                    this.svgMapRef.showLocation(this.currentStore.svgmap_region);
+                    this.svgMapRef.addActiveClass(this.currentStore.svgmap_region);
                 },
                 dropPin(store) {
-                    this.$refs.pngmap_ref.showLocation(store.id);
+                    this.svgMapRef.showLocation(store.svgmap_region);
                 },
                 isMultiDay(item) {
                     var timezone = this.timezone
