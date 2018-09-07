@@ -55,14 +55,13 @@
                                 <div v-masonry-tile  v-for="(store, index) in filteredStores" :key="index" class="stores-grid-item">
                                     <div class="store_logo_container">
                                         <router-link :to="'/stores/'+ store.slug">
-                                            <!--<img class="store_img" :src="store.image_url" alt="">-->
                                             <div v-if="!store.no_store_logo">
-                                                <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1533845184449/transparent_logo.png">
+                                                <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1536094188000/default_background.png">
                                                 <img  class="store_img" :src="store.store_front_url_abs" alt="">
                                             </div>
                                             
                                             <div v-else class="no_logo_container">
-                                                <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b8712636e6f641ebd220000/image/png/1533845184449/transparent_logo.png" alt="">
+                                                <img class="transparent_logo" src="//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1536094188000/default_background.png" alt="">
                                                 <div class="no_logo_text">
                                                     <div class="store_text"><h4>{{ store.name }}</h4></div>
                                                 </div>
@@ -195,7 +194,9 @@
                     var vm = this;
                     _.forEach(this.processedStores, function(value, key) {
                         if (_.includes(value.image_url, 'missing')) {
-                            value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1534863128000/pacific-commons-default.png";
+                            value.no_store_logo = true;
+                        } else {
+                            value.no_store_logo = false;
                         }
                         store_list.push(value);
                     });
