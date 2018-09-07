@@ -169,7 +169,7 @@
                     var store_list = [];
                     var vm = this;
                     _.forEach(this.processedStores, function(value, key) {
-                        if(!_.includes(value.categories, vm.dineFilter)) {
+                        if(_.includes(value.categories, vm.dineFilter)) {
                             if (_.includes(value.image_url, 'missing')) {
                                value.no_store_logo = true;
                             } else {
