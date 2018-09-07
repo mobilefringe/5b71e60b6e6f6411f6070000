@@ -71,7 +71,8 @@
                     suggestionAttribute: "name",
                     storeSearch: null,
                     currentSelection: null,
-                    dineFilter: 6127
+                    dineFilter: 6127,
+                    floorOne: null
                 }
             },
             created (){
