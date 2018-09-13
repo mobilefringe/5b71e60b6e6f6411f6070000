@@ -127,10 +127,10 @@ require(['Vue', 'vuex', 'vue2-filters', 'vue_router', 'routes', 'vuex-router-syn
                                 name: "Contact Us",
                                 href: "/contact-us"
                             },
-                            {
-                                name: "Leasing",
-                                href: "/leasing"
-                            },
+                            // {
+                            //     name: "Leasing",
+                            //     href: "/leasing"
+                            // },
                             {
                                 name: "Newsletter Sign Up",
                                 href: "/newsletter"
