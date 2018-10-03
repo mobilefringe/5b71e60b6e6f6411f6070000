@@ -88,8 +88,8 @@
                         this.lowerBanner = one_img;
                     }
                     
-                    this.main = response[1].data;
-                    this.amenities = response[1].data.subpages
+                    this.main = response[0].data;
+                    this.amenities = response[0].data.subpages
                     this.dataLoaded = true;
                 });
             },
