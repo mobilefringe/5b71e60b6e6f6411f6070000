@@ -79,8 +79,8 @@
                         this.pageImages = temp_repo2.images;
                     }
 
-                    this.main = response[1].data;
-                    this.leasingInfo = response[1].data.subpages[0]
+                    this.main = response[0].data;
+                    this.leasingInfo = response[0].data.subpages[0]
                     this.dataLoaded = true;
                 });
             },
