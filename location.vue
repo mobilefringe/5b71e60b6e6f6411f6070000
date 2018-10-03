@@ -73,9 +73,9 @@
                     if(temp_repo) {
                         this.pageImages = temp_repo.images;
                     }
-                    this.main = response[1].data;
-                    this.address = response[1].data.subpages[0]
-                    this.directions = response[1].data.subpages[1]
+                    this.main = response[0].data;
+                    this.address = response[0].data.subpages[0]
+                    this.directions = response[0].data.subpages[1]
                     this.dataLoaded = true;
                 });
             },
