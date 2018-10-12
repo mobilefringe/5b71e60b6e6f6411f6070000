@@ -783,7 +783,7 @@ a {
 }
 .change_color {
     background-color: $secondary;
-    color: #555;
+    font-weight: 700;
 }
 .list-item {
     display: inline-block;
