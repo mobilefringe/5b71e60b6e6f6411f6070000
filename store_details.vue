@@ -200,7 +200,7 @@
                         var current_promo = vm.findPromoById(value);
                         
                         if (_.includes(current_promo.image_url, 'missing')) {
-                            current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1529532181000/promoplaceholder2@2x.png";
+                            current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1539375270000/pc_promo_default.png";
                         }
 
                         temp_promo.push(current_promo);
