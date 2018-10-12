@@ -213,7 +213,7 @@
                         var current_event = vm.findEventById(value);
                         
                         if (_.includes(current_event.image_url, 'missing')) {
-                            current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                            current_event.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1539375346000/pc_event_default.png";
                         }
 
                         temp_event.push(current_event);
