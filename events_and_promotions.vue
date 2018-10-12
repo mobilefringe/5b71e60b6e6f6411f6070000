@@ -158,11 +158,11 @@
                             }
 
                             if (value.store != null && value.store != undefined && _.includes(value.store.image_url, 'missing')) {
-                                value.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                                value.store.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1539375346000/pc_event_default.png";
                             }
                             
                             if (_.includes(value.image_url, 'missing')) {
-                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b1550796e6f641cab010000/image/png/1529532187000/eventsplaceholder2@2x.png";
+                                value.image_url = "//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/png/1539375346000/pc_event_default.png";
                             }
                             
                             value.description_short = _.truncate(value.description, { 'length': 200, 'separator': ' ' });
