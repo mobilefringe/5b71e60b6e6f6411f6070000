@@ -70,7 +70,7 @@
                     }
                     
                     var temp_repo1 = this.findRepoByName('Leasing Booklet');
-                    if(temp_repo1) {
+                    if(temp_repo1.images) {
                         this.leasingBooklet = temp_repo1.images[0].image_url;
                     }
 
