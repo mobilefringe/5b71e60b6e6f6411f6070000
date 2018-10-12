@@ -28,9 +28,9 @@
         		            </a>    
                         </div>
                     </div>
-                    <div class="row">
+                    <div v-if="leasingInfo" class="row">
                         <div class="col-md-4" v-for="item in leasingInfo">
-                            <div class="leasing_contact" v-if="leasingInfo" v-html="item.body"></div>
+                            <div class="leasing_contact" v-html="item.body"></div>
                         </div>
                     </div>
                 </div>
