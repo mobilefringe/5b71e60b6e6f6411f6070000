@@ -32,6 +32,8 @@
                         <!--</div>-->
 
                         <div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1539372793000/pc_home_1925x470-compressor.jpg)' }"></div>
+<div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1539372793000/pc_home_1925x470-compressor.jpg)' }"></div>
+
                     </slick>
                     <div class="next"></div>
                 </div>
