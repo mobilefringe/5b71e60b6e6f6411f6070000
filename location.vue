@@ -20,8 +20,10 @@
                         </div>
                     </div>
                 </div>
-                <div class="location_map">
-                    <google-map :property="property" :zoom="16"></google-map>
+                <div class="main_container">
+                    <div class="location_map">
+                        <iframe :src="propertyAddress()" width="100%" height="490" frameborder="0" style="border:0" allowfullscreen></iframe>
+                    </div>
                 </div>
                 <div class="main_container">
                     <div class="row">
@@ -97,6 +99,12 @@
                     } catch (e) {
                         console.log("Error loading data: " + e.message);
                     }
+                },
+                propertyAddress() {
+                    var address = this.property.name + "+" + this.property.address1 + "+" + this.property.city + "+" + this.property.province_state + "+" + this.property.country + this.property.postal_code
+                    var key ="AIzaSyCukCjH3fsuDYBdI44hZKL43m60jEToJjY"
+                    var src = "https://www.google.com/maps/embed/v1/place?q=" + address + "&key="+ key
+                    return src
                 }
             }
         });
