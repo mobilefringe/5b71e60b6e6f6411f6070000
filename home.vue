@@ -198,7 +198,7 @@
                     var temp_urls = ["/stores", "/dining", null,null,null];
                     
                     _.forEach(this.$store.state.banners, function (value, key) {
-                        value.name = temp_names[key];
+                        value.image_url = temp_names[key];
                         value.name = temp_names[key];
                         value.name = temp_names[key];
                         value.name = temp_names[key];
