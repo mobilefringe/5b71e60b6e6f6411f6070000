@@ -197,7 +197,7 @@
                     var temp_desc = ["You deserve it.","We know just the place...", null,null,null];
                     var temp_urls = ["/stores", "/dining", null,null,null];
                     
-                    _.forEach(this.$store.state.banners, function (value, key) {
+                    _.forEach(temp_image_urls, function (value, key) {
                         console.log("temp_image_urls[key]", key, temp_image_urls[key])
                         value.image_url = temp_image_urls[key];
                         value.name = temp_names[key];
