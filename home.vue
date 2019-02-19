@@ -198,6 +198,7 @@
                     var temp_urls = ["/stores", "/dining", null,null,null];
                     
                     _.forEach(temp_image_urls, function (key) {
+                        var value = {}''
                         console.log("temp_image_urls[key]", key, temp_image_urls[key])
                         value.image_url = temp_image_urls[key];
                         value.name = temp_names[key];
