@@ -7,34 +7,34 @@
                     <div class="prev"></div>
                     <slick ref="slick" :options="slickOptions">
                         <!-- DYNAMIC BANNERS -->
-                        <!--<div v-if="homeBanners" v-for="banner in homeBanners">-->
-                        <!--    <div v-if="banner.name && banner.description && banner.url" class="banner_height">-->
-                        <!--        <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>-->
-                        <!--        <div class="banner_content_container">-->
-                        <!--            <div class="banner_content">-->
-                        <!--                <span v-if="banner.heading" class="banner_heading">{{ banner.heading }}</span>-->
-                        <!--                <h1 class="banner_title">{{ banner.name }}</h1>-->
-                        <!--                <p class="banner_text">{{ banner.description }}</p>-->
-                        <!--                <a :href="banner.url">-->
-                        <!--                    <span class="banner_btn animated_btn">Find Out More</span>-->
-                        <!--                </a>-->
-                        <!--            </div>-->
-                        <!--        </div>-->
-                        <!--    </div>-->
-                        <!--    <div v-else-if="!banner.url">-->
-                        <!--        <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>-->
-                        <!--    </div>-->
-                        <!--    <div v-else>-->
-                        <!--        <a :href="banner.url">-->
-                        <!--            <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>-->
-                        <!--        </a>-->
-                        <!--    </div>-->
-                        <!--</div>-->
- <div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1550603793000/PC_HungryTreat119_images2a.jpg)' }"></div>
-  <div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1550603793000/PC_HungryTreat119_images2b.jpg)' }"></div>
-                        <div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1539372793000/pc_home_1925x470-compressor.jpg)' }"></div>
-<div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1542071972000/PC_instagram1118_1925x470_1.jpg)' }"></div>
-<div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1542071964000/PC_generic1118_1925x470_1.jpg)' }"></div>
+                        <div v-if="homeBanners" v-for="banner in homeBanners">
+                            <div v-if="banner.name && banner.description && banner.url" class="banner_height">
+                                <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
+                                <div class="banner_content_container">
+                                    <div class="banner_content">
+                                        <span v-if="banner.heading" class="banner_heading">{{ banner.heading }}</span>
+                                        <h1 class="banner_title">{{ banner.name }}</h1>
+                                        <p class="banner_text">{{ banner.description }}</p>
+                                        <a :href="banner.url">
+                                            <span class="banner_btn animated_btn">Find Out More</span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div v-else-if="!banner.url">
+                                <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
+                            </div>
+                            <div v-else>
+                                <a :href="banner.url">
+                                    <div class="banner_image" v-bind:style="{ backgroundImage: 'url(' + banner.image_url + ')' }"></div>
+                                </a>
+                            </div>
+                        </div>
+<!-- <div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1550603793000/PC_HungryTreat119_images2a.jpg)' }"></div>-->
+<!--  <div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1550603793000/PC_HungryTreat119_images2b.jpg)' }"></div>-->
+<!--                        <div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1539372793000/pc_home_1925x470-compressor.jpg)' }"></div>-->
+<!--<div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1542071972000/PC_instagram1118_1925x470_1.jpg)' }"></div>-->
+<!--<div class="banner_image" v-bind:style="{ backgroundImage: 'url(//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1542071964000/PC_generic1118_1925x470_1.jpg)' }"></div>-->
 
 
                     </slick>
@@ -192,6 +192,11 @@
                 ]),
                 homeBanners() {
                     var banners = [];
+                    var temp_image_urls = [];
+                    var temp_names = [];
+                    var temp_desc = [];
+                    var temp_urls = [];
+                    
                     _.forEach(this.$store.state.banners, function (value, key) {
                         var today = new Date();
                         var start = new Date (value.start_date);
