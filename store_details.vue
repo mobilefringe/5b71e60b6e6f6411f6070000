@@ -280,7 +280,7 @@
                             var floor_1 = {};
                             floor_1.id = "first-floor";
                             floor_1.title = "Level 1";
-                            floor_1.map = _.find(floor_maps, function(o){ return _.toNumber(o.id) == _.toNumber(42923);}).image_url;
+                            floor_1.map = _.find(floor_maps, function(o){ return _.toNumber(o.id) == _.toNumber(49347);}).image_url;
                             floor_1.z_index = 1;
                             floor_1.show = true;
                             floor_list.push(floor_1);
