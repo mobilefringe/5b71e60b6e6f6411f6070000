@@ -220,24 +220,24 @@
                             }
                         }
                     });
-                    _.forEach(this.$store.state.banners, function (value, key) {
-                        var today = new Date();
-                        var start = new Date (value.start_date);
-                        if (start <= today){
-                            if (value.end_date){
-                                var end = new Date (value.end_date);
-                                if (end >= today){
-                                    banners.push(value);  
-                                }
-                            } else {
-                                banners.push(value);
-                            }
+                    // _.forEach(this.$store.state.banners, function (value, key) {
+                    //     var today = new Date();
+                    //     var start = new Date (value.start_date);
+                    //     if (start <= today){
+                    //         if (value.end_date){
+                    //             var end = new Date (value.end_date);
+                    //             if (end >= today){
+                    //                 banners.push(value);  
+                    //             }
+                    //         } else {
+                    //             banners.push(value);
+                    //         }
                             
-                            if (value.cms_fields.subheader) {
-                                value.heading = value.cms_fields.subheader;
-                            }
-                        }
-                    });
+                    //         if (value.cms_fields.subheader) {
+                    //             value.heading = value.cms_fields.subheader;
+                    //         }
+                    //     }
+                    // });
                     banners = _.orderBy(banners, function(o) { return o.position });
                     return banners
                 },
