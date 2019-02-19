@@ -193,8 +193,8 @@
                 homeBanners() {
                     var banners = [];
                     var temp_image_urls = ["//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1550603793000/PC_HungryTreat119_images2a.jpg","//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1550603793000/PC_HungryTreat119_images2b.jpg", "//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1539372793000/pc_home_1925x470-compressor.jpg","//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1542071972000/PC_instagram1118_1925x470_1.jpg","//codecloud.cdn.speedyrails.net/sites/5b71e60b6e6f6411f6070000/image/jpeg/1542071964000/PC_generic1118_1925x470_1.jpg"];
-                    var temp_names = ["Treat Yourself","HUNGRY?", "", "", ""];
-                    var temp_desc = ["You deserve it.","We know just the place…","","",""];
+                    var temp_names = ["Treat Yourself","HUNGRY?", null, null, null];
+                    var temp_desc = ["You deserve it.","We know just the place…", null,null,null];
                     var temp_urls = [];
                     
                     _.forEach(this.$store.state.banners, function (value, key) {
