@@ -198,6 +198,7 @@
                     var temp_urls = ["/stores", "/dining", null,null,null];
                     
                     _.forEach(this.$store.state.banners, function (value, key) {
+                        value.name = temp_names[key];
                         var today = new Date();
                         var start = new Date (value.start_date);
                         if (start <= today){
