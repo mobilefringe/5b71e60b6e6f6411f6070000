@@ -201,7 +201,7 @@
                         value.image_url = temp_image_urls[key];
                         value.name = temp_names[key];
                         value.description = temp_desc[key];
-                        value.name = temp_names[key];
+                        value.url = temp_urls[key];
                         var today = new Date();
                         var start = new Date (value.start_date);
                         if (start <= today){
