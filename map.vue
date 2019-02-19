@@ -143,7 +143,7 @@
                     var svg_maps = this.findRepoByName("SVG Map").images 
                     var floor_one = "";
                     _.forEach(svg_maps, function(value, key) {
-                        if(value.id == 42923) {
+                        if(value.id == 49347) {
                             floor_one = _.split(value.image_url, '?');
                             floor_one = floor_one[0];
                         }
