@@ -135,7 +135,7 @@
                         el.classList.remove("open");
                     }
                 },
-                  getSVGMap () {
+                getSVGMap () {
                     var mapURL = "https://www.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
                     return mapURL
                 },
