@@ -47,7 +47,7 @@
                             <hr class="event_seperator">
                         </div>
                     </div>
-                    <div class="row event_container" v-else>
+                    <div class="row event_container" v-if="jobs.length == 0">
                         <div class="col-md-12">
                             <p>There are no Job Postings at this time. Please check back soon.</p>
                         </div>
