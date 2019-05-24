@@ -47,6 +47,11 @@
                             <hr class="event_seperator">
                         </div>
                     </div>
+                    <div class="row event_container" v-else>
+                        <div class="col-md-12">
+                            <p>There are no Job Postings at this time. Please check back soon.</p>
+                        </div>
+                    </div>
                 </div>
 		    </div>
 		</transition>
