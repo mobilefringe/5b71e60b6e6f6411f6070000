@@ -1501,7 +1501,6 @@ $anim-speed: 0.3s;
             border-radius: 0;
             font-family: 'Montserrat', sans-serif;
             font-weight: 300;
-            font-size: 0.8125rem;
             line-height: normal;
             color: #555; 
         }  
@@ -1573,12 +1572,12 @@ $anim-speed: 0.3s;
         position: absolute;
         top: 20px;
         right: -1px;
-        height: 21px;
+        height: 23px;
         background-color: $primary;
         .store_tag_text {
             padding: 4px 0;
             width: 108px;
-            font-size: 0.65rem;
+            font-size: 0.75rem;
             color: #FFF;
             line-height: normal;
             letter-spacing: 0.6px;
@@ -1716,11 +1715,6 @@ $anim-speed: 0.3s;
     transform: translate(-50%, -50%);
     padding: 25px;
 }
-// .store_details_image {
-//     margin-bottom: 20px; 
-//     max-width: 100%;
-//     border: 1px solid #D8D8D8;
-// }
 .store_details_phone, .store_details_website {
     font-size: 1.333rem;
     color: $primary;
@@ -1729,7 +1723,6 @@ $anim-speed: 0.3s;
     margin-bottom: 20px;
     padding: 0;
     list-style-type: none;
-    font-size: 1.083rem;
     line-height: normal;
     li {
         margin-bottom: 20px;
@@ -1747,7 +1740,7 @@ $anim-speed: 0.3s;
         float: right;
     }
     .hours_vary {
-        font-size: 0.916rem;
+        font-size: 0.875rem;
         color: #000;
     }
 }
@@ -1903,9 +1896,25 @@ $anim-speed: 0.3s;
             margin: 20px 0 0 0;
             padding: 0;
         }
+        .mobile_social_icon_container {
+            margin: 50px auto 0 auto;
+            max-width: 300px;
+            text-align: center;
+            .social_title {
+                color: #FFF;
+                text-transform: uppercase;
+            }
+            .social_icon {
+                padding: 0 5px;
+                .fab {
+                    font-size: 2.5rem;
+                    color: #FFF;
+                    transition: all 0.3s ease;
+                }
+            }
+        }
     }
     #mobile_nav ul .menu_item {
-        // padding: 12px 0;
         display: block;
         font-size: 1.25rem;
         text-align: center;
