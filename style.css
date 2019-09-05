@@ -421,11 +421,19 @@ a {
     }
     .footer_content {
         padding: 48px 0;
-        font-size: 0.9375rem;
-        line-height: 0.9375rem;
+        line-height: 1.25rem;
         text-align: center;
+        p {
+            margin: 0 0 5px;
+        }
+        .social_icon_container {
+            margin: 10px 0;
+        }
         .social_icon {
             padding: 0 5px;
+            .fab {
+                font-size: 2rem;
+            }
         }
         .footer_links a {
             color: #FFF;
@@ -656,7 +664,7 @@ a {
                 top: 50%;
                 left: 50%;
                 transform: translate(-50%, -50%);
-                font-size: 0.656rem;
+                font-size: 0.875rem;
                 line-height: normal;
                 color: #FFF;
                 text-align: center;
@@ -666,7 +674,7 @@ a {
                 position: absolute;
                 bottom: 10px;
                 left: 10px;
-                font-size: 0.656rem;
+                font-size: 0.875rem;
                 line-height: normal;
                 color: #FFF;
             }
@@ -734,7 +742,7 @@ a {
 }
 .page-breadcrumb {
     margin-bottom: 60px;
-    font-size: 0.8rem;
+    font-size: 0.875rem;
     line-height: normal;
     color: $primary;
     .breadcrumbs {
@@ -780,7 +788,7 @@ a {
     z-index: 1;
     border: none;
     background: $primary;
-    font-size: 0.75rem;
+    font-size: 0.875rem;
     line-height: normal;
     color: #FFF;
     text-align: center;
@@ -963,6 +971,8 @@ $anim-speed: 0.3s;
         border-radius: 0;
         background: #ebebeb;
         box-shadow: none;
+        font-size: 1rem;
+        line-height: inherit;
         color: #555759;
     }
     textarea.form-control {
@@ -1083,9 +1093,6 @@ $anim-speed: 0.3s;
     margin-bottom: 12px;
 }
 .event_desc {
-    // margin-bottom: 24px;
-    font-size: 0.8rem;
-    line-height: 1.5rem;
     color: #000;
     img {
         max-width: 100%;
@@ -1195,10 +1202,9 @@ $anim-speed: 0.3s;
     background: #ebebeb;
     #searchComponentInput {
         padding: 0 13px;
-        height: 28px;
+        height: 33px;
         border: none;
         background: transparent;
-        font-size: 0.8125rem;
         line-height: normal;
         color: #555;
     }
@@ -1209,7 +1215,6 @@ $anim-speed: 0.3s;
         position: absolute;
         top: 8px;
         right: 10px;
-        font-size: 0.875rem;
         line-height: normal;
         color: #555;
     }
@@ -1227,7 +1232,6 @@ $anim-speed: 0.3s;
             color: #555;
             p {
                 margin: 0;
-                font-size: 0.8125rem;
                 line-height: normal;
                 transition: all 0.3s ease;
             }
@@ -1251,7 +1255,6 @@ $anim-speed: 0.3s;
                 height: 30px;
                 font-family: 'Montserrat', sans-serif;
                 font-weight: 300;
-                font-size: 0.8125rem !important;
                 line-height: normal !important;
                 color: #555; 
             }
