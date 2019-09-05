@@ -1801,7 +1801,8 @@ $anim-speed: 0.3s;
     }
     /* *** HEADER *** */
     #header .site_logo {
-        padding: 0 0 21px 0;
+        // padding: 0 0 21px 0;
+        padding: 0 0 38px 0;
         max-width: 220px;
     }
     #primary_nav {
