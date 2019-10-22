@@ -205,7 +205,7 @@
                 },
                 dropDownCats() {
                     var vm = this;
-                    var cats = _.filter(this.processedCategories, function(o) { return _.toNumber(o.id) !== vm.dineFilter });
+                    var cats = _.filter(this.processedCategories, function(o) { return _.toNumber(o.id) !== vm.dineFilter && o.store_ids != null});
                     cats = _.map(cats, 'name');
                     cats.unshift('All');
                     return cats;
