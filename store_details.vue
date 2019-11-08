@@ -238,7 +238,6 @@
                     var temp_promo = [];
                     _.forEach(this.currentStore.promotions, function(value, key) {
                         var current_promo = vm.findPromoById(value);
-                        
                         if (_.includes(current_promo.image_url, 'missing')) {
                             current_promo.image_url = "//codecloud.cdn.speedyrails.net/sites/5d7121e26e6f641906020000/image/png/1539375270000/pc_promo_default.png";
                         }
