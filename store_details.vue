@@ -51,17 +51,17 @@
                                 <mapplic-map ref="svgmap_ref" :height="300" :minimap= "false" :deeplinking="false" :sidebar="false" :hovertip="true" :maxscale= "5" :storelist="processedStores" :floorlist="floorList" :svgWidth="2500" :svgHeight="2300" @updateMap="updateSVGMap" :key="currentStore.id"></mapplic-map>
                             </div>
                             <div class=" margin_30 store_details_desc" v-html="currentStore.rich_description"></div>
-                            <!--<div v-if="deliveryAvailable" class="margin_30">-->
-                            <!--    <h3 class="store_details_title">Delivery Options:</h3>-->
-                            <!--    <div class="store_details_delivery">-->
-                            <!--        <img v-if="hasDoordash" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400931000/doordash.png" alt="Delivery available with DoorDash" />-->
-                            <!--        <img v-if="hasGrubhub" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400381000/grubhub.png" alt="Delivery available with Grubhub" />-->
-                            <!--        <img v-if="hasPostmates" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1569270191004/postmates.png" alt="Delivery available with Postmates" />-->
-                            <!--        <div v-if="hasRestaurantDelivery" class="delivery_option"><span>Restaurant Delivery</span></div>-->
-                            <!--        <img v-if="hasUberEats" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400422000/ubereats.png" alt="Delivery available with Uber Eats" />-->
+                            <div v-if="deliveryAvailable" class="margin_30">
+                                <h3 class="store_details_title">Delivery Options:</h3>
+                                <div class="store_details_delivery">
+                                    <img v-if="hasDoordash" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400931000/doordash.png" alt="Delivery available with DoorDash" />
+                                    <img v-if="hasGrubhub" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400381000/grubhub.png" alt="Delivery available with Grubhub" />
+                                    <img v-if="hasPostmates" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1569270191004/postmates.png" alt="Delivery available with Postmates" />
+                                    <div v-if="hasRestaurantDelivery" class="delivery_option"><span>Restaurant Delivery</span></div>
+                                    <img v-if="hasUberEats" class="delivery_option" src="//codecloud.cdn.speedyrails.net/sites/5d8ac35a6e6f647bec090000/image/png/1568400422000/ubereats.png" alt="Delivery available with Uber Eats" />
                                     
-                            <!--    </div>-->
-                            <!--</div>-->
+                                </div>
+                            </div>
                             <div v-if="this.currentStore.events">
                                 <h3 class="store_details_title">Current Events</h3>
                                 <div class="row margin_40">
@@ -161,12 +161,12 @@
                     storeEvents: null,
                     storePromotions: null,
                     storeCoupons: null,
-                    // deliveryAvailable: false,
-                    // hasDoordash: false,
-                    // hasGrubhub: false,
-                    // hasPostmates: false,
-                    // hasRestaurantDelivery: false,
-                    // hasUberEats: false
+                    deliveryAvailable: false,
+                    hasDoordash: false,
+                    hasGrubhub: false,
+                    hasPostmates: false,
+                    hasRestaurantDelivery: false,
+                    hasUberEats: false
                 }
             },
             props:['id'],
@@ -212,27 +212,27 @@
                     this.storeHours = _.sortBy(storeHours, function(o) { return o.day_of_week });
                 
                     // DELIVERY
-                    // var delivery_category = 8258;
-                    // var categories = this.currentStore.categories;
-                    // var subcategories = this.currentStore.subcategories;
-                    // if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
-                    //     this.deliveryAvailable = true;
-                    //     if (_.includes(subcategories, 8263)) {
-                    //         this.hasUberEats = true;
-                    //     }
-                    //     if (_.includes(subcategories, 8259)) {
-                    //         this.hasDoordash = true;
-                    //     }
-                    //     if (_.includes(subcategories, 8260)) {
-                    //         this.hasGrubhub = true;
-                    //     }
-                    //     if (_.includes(subcategories, 8261)) {
-                    //         this.hasPostmates = true;   
-                    //     }
-                    //     if (_.includes(subcategories, 8262)) {
-                    //         this.hasRestaurantDelivery = true;   
-                    //     }
-                    // }
+                    var delivery_category = 8258;
+                    var categories = this.currentStore.categories;
+                    var subcategories = this.currentStore.subcategories;
+                    if (_.includes(categories, delivery_category) && !_.isEmpty(subcategories)) {
+                        this.deliveryAvailable = true;
+                        if (_.includes(subcategories, 8263)) {
+                            this.hasUberEats = true;
+                        }
+                        if (_.includes(subcategories, 8259)) {
+                            this.hasDoordash = true;
+                        }
+                        if (_.includes(subcategories, 8260)) {
+                            this.hasGrubhub = true;
+                        }
+                        if (_.includes(subcategories, 8261)) {
+                            this.hasPostmates = true;   
+                        }
+                        if (_.includes(subcategories, 8262)) {
+                            this.hasRestaurantDelivery = true;   
+                        }
+                    }
                     
                     var vm = this;
                     var temp_promo = [];
