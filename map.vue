@@ -5,7 +5,7 @@
             <div v-if="dataLoaded" v-cloak>
                 <div class="inside_page_header" v-bind:style="{ background: 'linear-gradient(0deg, rgba(0,0,0,0.2), rgba(0,0,0,0.2)), url(' + pageBanner.image_url + ') center center' }">
                     <div class="main_container position_relative">
-                        <h1>Center Map</h1>
+                        <h2>Center Map</h2>
                     </div>
                 </div>
                 <div class="main_container">
@@ -44,8 +44,8 @@
                                 </search-component>
                                 <i id="store-search-icon" class="fa fa-search" aria-hidden="true"></i>
                             </div>
-                            <div class="store_list_container" v-if="filteredStores">
-                                <p class="store_name" v-for="store in filteredStores" v-on:click="dropPin(store)">{{store.name}}</p>
+                            <div tabindex=0 class="store_list_container" v-if="filteredStores">
+                                <p tabindex=0 class="store_name" v-for="store in filteredStores" v-on:focus="dropPin(store)" v-on:click="dropPin(store)">{{store.name}}</p>
                             </div>
                         </div>
                         <div class="col-md-9">
