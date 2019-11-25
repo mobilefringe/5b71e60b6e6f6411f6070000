@@ -563,7 +563,8 @@ strong {
             .banner_btn {
                 padding: 11px 30px;
                 display: inline-block;
-                background: $secondary;
+                // background: $secondary;
+                border: 2px solid $secondary;
                 font-size: 0.9rem;
                 font-weight: 700;
                 text-transform: uppercase;
