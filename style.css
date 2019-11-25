@@ -553,7 +553,7 @@ strong {
                     background: #555;
                 }
                 &:hover {
-                    color: $secondary;
+                    // color: $secondary;
                 }
             }
         }
