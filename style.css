@@ -343,7 +343,7 @@ strong {
             	p {
             	    margin: 0;
             	}
-            	a:hover {
+            	a:hover, a:focus {
                     color: #FFF !important;
                 }
             }
