@@ -182,6 +182,7 @@
                     }
                 
                     this.updateCurrentStore(this.id);
+                    console.log(this.currentStore)
                     this.getSVGMap;
                     this.dataLoaded = true;
                 });
@@ -263,13 +264,9 @@
                     var temp_coupon = [];
                     _.forEach(this.currentStore.coupons, function(value, key) {
                         var current_coupon = vm.findCouponById(value);
-                        // if (_.includes(current_coupon.image_url, 'missing')) {
-                        //     current_coupon.image_url = "http://placehold.it/1560x800/757575";
-                        // }
 
                         temp_coupon.push(current_coupon);
                     }); 
-                    // this.storeCoupons = temp_coupon;
                 }
             },
             computed: {
@@ -290,25 +287,9 @@
                     })
                     return this.processedStores;
                 },
-                 // getSVGMap () {
-                //     var mapURL = "https://www.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
-                //     return mapURL
-                // },
                 svgMapRef() {
                     return this.$refs.svgmap_ref;
                 },
-                // floorList () {
-                //     var floor_list = [];
-                //     var floor_1 = {};
-                //     floor_1.id = "first-floor";
-                //     floor_1.title = "Level One";
-                //     // floor_1.map = this.getSVGMap
-                //     floor_1.map = this.floorOne;
-                //     floor_1.z_index = 1;
-                //     floor_1.show = true;
-                //     floor_list.push(floor_1);
-                //     return floor_list;
-                // }
                 floorList () {
                     var floor_list = [];
                     // Get SVG Maps from Repo
