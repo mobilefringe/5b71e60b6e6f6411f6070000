@@ -336,7 +336,7 @@ strong {
                 min-width: 136px;
                 font-size: 0.875rem;
                 line-height: normal;
-                color: #FFF !important;
+                color: #FFF;
                 &:hover, &:active, &:focus, &:visited {
             	    background: $secondary;
             	}
