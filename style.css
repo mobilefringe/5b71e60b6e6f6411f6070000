@@ -344,7 +344,7 @@ strong {
             	    margin: 0;
             	}
             	a:hover {
-                    color: #FFF;
+                    color: #FFF !important;
                 }
             }
         }
