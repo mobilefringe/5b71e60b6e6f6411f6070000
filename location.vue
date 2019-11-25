@@ -105,6 +105,9 @@
                     var key ="AIzaSyCukCjH3fsuDYBdI44hZKL43m60jEToJjY"
                     var src = "https://www.google.com/maps/embed/v1/place?q=" + address + "&key="+ key
                     return src
+                },
+                giveMapAlt() {
+                   
                 }
             }
         });
