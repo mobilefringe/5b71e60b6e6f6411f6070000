@@ -1480,6 +1480,9 @@ input[type=search] {
         }
     }
 }
+.v-select .spinner {
+    font-size: 2rem !important;   
+}
 .store_category {
     margin-right: 30px;
     width: 208px;
