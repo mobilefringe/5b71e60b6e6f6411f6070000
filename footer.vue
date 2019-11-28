@@ -1,4 +1,4 @@
-<template>
+<template> test
     <footer v-if="dataLoaded" v-cloak>
         <section id="footer">
             <div class="newsletter_signup">
