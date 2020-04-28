@@ -136,7 +136,7 @@
                     }
                 },
                 getSVGMap () {
-                    var mapURL = "https://www.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
+                    var mapURL = "//assets.mallmaverick.com" + this.property.svgmap_url.split("?")[0];
                     return mapURL
                 },
                 // getSVGMap() {
